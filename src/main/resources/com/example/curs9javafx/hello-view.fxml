@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      fx:controller="com.example.curs9javafx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <TableView fx:id="tableSquares"/>
+    <ListView fx:id="listSquares"/>
+    <HBox>
+        <VBox>
+            <Label fx:id="labelId">ID</Label>
+            <TextField fx:id="textFieldId"/>
+        </VBox>
+        <VBox>
+            <Label fx:id="labelName">Name</Label>
+            <TextField fx:id="textFieldName"/>
+        </VBox>
+        <VBox>
+            <Label fx:id="labelWidth">Width</Label>
+            <TextField fx:id="textFieldWidth"/>
+        </VBox>
+        <Button fx:id="buttonAdd" onAction="#onAddButtonClick">Adauga</Button>
+    </HBox>
+    <HBox>
+        <Label fx:id="labelMinWidth">0</Label>
+        <Slider fx:id="sliderWidth"/>
+        <Label fx:id="labelMaxWidth">100</Label>
+    </HBox>
+</VBox>
